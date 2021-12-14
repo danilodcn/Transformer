@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flower = "*"
+celery = "*"
+numpy = "*"
+pandas = "*"
+python-dotenv = "*"
+fastapi = "*"
+click = "*"
+flask = "*"
+sqlalchemy = "*"
+ipdb = "*"
+pytest = "*"
+matplotlib = "*"
+dash = "*"
+dash-bootstrap-components = "*"
+flask-oauth = "*"
+flask-login = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

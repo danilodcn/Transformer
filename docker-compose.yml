@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  transformer-core:
+    image: daconnas/transformer
+    # command: 
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes: 
+      - ".:/app"
+    network_mode: "host"
+
+  # postgres:
+  #   image: postgres:latest
+  #   environment:
+  #     POSTGRES_USER: santuu_user
+  #     POSTGRES_PASSWORD: santuu_pass
+  #     POSTGRES_DB: santuu
+  #     POSTGRES_HOST: postgres
+  #     POSTGRES_PORT: "5432"
+  #   ports:
+  #     - 5433:5432
+  # nats:
+  #   image: 'bitnami/nats:latest'
+  #   ports:
+  #     - 4222:4222
+  #     - 6222:6222
+  #     - 8222:8222
+  # adminer:
+  #   image: adminer
+  #   ports:
+  #     - 8080:8080 # web ui
